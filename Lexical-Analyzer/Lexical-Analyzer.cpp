@@ -25,7 +25,7 @@ string ReadFile(string path) {
 }
 
 
-string prepareTextForLA(const string& inputText) {
+string prepareTextForLA(const string& inputText)     {
     // Removing comments (single and multi-line)
     string textWithoutComments = regex_replace(inputText, regex("//.*|/\\*.*?\\*/"), "");
 
